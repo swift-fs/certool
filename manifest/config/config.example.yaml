@@ -7,5 +7,5 @@ logger:
 aliyun:
   cdnAccessKeyId: "cdn的access_id"
   cdnAccessKeySecret: "cdn的access_key"
-  certAccessKeyId: "证书的access_id"
-  certAccessKeySecret: "证书的access_key"
+  certAccessKeyId: "证书管理的access_id"
+  certAccessKeySecret: "证书管理的access_key"
