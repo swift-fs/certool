@@ -1,0 +1,11 @@
+logger:
+  level: "all"
+  stdout: true
+  path: "./logs/"
+  file: "{Y-m-d}.log"
+
+aliyun:
+  cdnAccessKeyId: "cdn的access_id"
+  cdnAccessKeySecret: "cdn的access_key"
+  certAccessKeyId: "证书的access_id"
+  certAccessKeySecret: "证书的access_key"
