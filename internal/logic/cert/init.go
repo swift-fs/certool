@@ -45,6 +45,7 @@ func CreateCdnClient(ctx context.Context) (_result *cdn20180510.Client, _err err
 		// 必填，请确保代码运行环境设置了环境变量 ALIBABA_CLOUD_ACCESS_KEY_SECRET。
 		AccessKeySecret: tea.String(g.Cfg().MustGet(ctx, "aliyun.cdnAccessKeySecret").String()),
 	}
+	g.Log().Info(ctx, "cdnAccessKeyId:", config)
 	config.Endpoint = tea.String("cdn.aliyuncs.com")
 	_result, _err = cdn20180510.NewClient(config)
 	return _result, _err
